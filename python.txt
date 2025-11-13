@@ -1,0 +1,79 @@
+Python Practices
+
+https://github.com/krishnaik06/Complete-Python-Bootcamp
+
+IDE - > VS code
+Setup process : 
+	-> Need to install anaconda
+	
+Before that we need to install anaconda -> and to set path variable 
+- where conda -> to check file path
+
+(base) C:\WINDOWS\system32>where conda
+G:\Anaconda\Library\bin\conda.bat
+G:\Anaconda\Scripts\conda.exe
+G:\Anaconda\condabin\conda.bat
+
+Enivornment Create
+conda create -p venv python==3.12
+-> Activate venv  -> conda activate venv/
+
+Or we can create using python if condo is not installed
+python -m venv <foldername>  -> python -m venv myenv
+							-> myenv\Scripts\activate
+							
+
+To run Jupiter notebook
+we need to install ipykernel 
+ pip install ipykernel
+
+to install muliple packages
+	pip install -r requirement.txt
+	
+ 
+ 
+ To run pynb file -> shift + enter
+ To run py file -> python file name -> python app.py
+ 
+ Syntax :
+ Comments 
+	Single line comment  -> #
+	Multiple line comment -> '''    '''
+Indentation -> means to execute within that block -> java {} -> python  : 
+Line continuation -> \ - back slash - to wrap the line 
+MultipleStatement on a single line  -> 
+
+python will determine the datatype at the runtime, no need to specify the datatype as string/int/boolean
+print(type(name))
+
+Datatypes -> 
+	Integer
+	String
+	Float
+	boolean -> TRUR/FALSE
+
+Floor division -> remove the decimal ex -> a // b 
+
+range(1,10) -> range(1,10,2) -> range(start, end, stepvalue)
+stepvalue -> increment based on stepvalue
+
+Function :
+Is a block of code to write to all the task
+
+return statement in python -> we can return multiple values in a single return
+Lambda function -> is an anonymous function defined using lambda keyword
+Map function -> applies an given function to all items in an input list and returns a map object
+
+import syntax
+import math / from math import addition
+common lib -> math, numpy, array,random
+File Handling import -> shutil, os, json, csv, re, dateTime
+
+streamlit is an open source in python to create an web application, mostly used in data science and Machine learning
+
+
+
+
+
+	
+

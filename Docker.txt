@@ -1,0 +1,20 @@
+Docker commands :
+	To list out docker images -> docker image ls
+	To pull docker image -> docker pull <ImageName> -> docker pull openjdk:17
+	To build docker image -> docker build -t <ImageName> . -> docker build -t app.jar .
+	To Run docker image -> docker run -p 9090:8080 app.jar
+	
+	default images from docker hub
+		-> openjdk:17-jdk-alpine
+		-> openjdk:17-jdk-slim
+		-> hello-world
+		-> eclipse-temurin:17-jdk-alpine
+	
+	Docker File :
+	
+	FROM eclipse-temurin:17-jdk
+	ARG JAR_FILE=build/libs/*.jar
+	COPY ./build/libs/springboot.docker-0.0.1-SNAPSHOT.jar app.jar
+	ENTRYPOINT ["java","-jar","/app.jar"]
+	
+	
